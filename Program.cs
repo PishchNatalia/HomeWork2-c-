@@ -1,38 +1,25 @@
 ﻿// Домашняя работа 2
 // Задача 1.Напишите программу,которая принимает на вход трехзначное число и на выходе показывает вторую цифру этого числа.
 /*
-int CutSecondNumber(int num) // Метод выделения второго числа.
-{
- int sot =num / 10 ;
- int des = sot % 10;
+int SecondDigit(int num)  // Метод выделения второго числа.
 
-return des;
-}
-// Проверяем число на трехзначность.
-/*bool ChekingDigit(int num)
 {
-    if (num < 100 || num >1000)
+ int second =num / 10 % 10;
+ return second;
 }
-retern false;
 
-else 
- {
-    retern true;
- }
-*/
-/*
 Console.WriteLine("Введите трехзначное число: ");
  int num = Convert.ToInt32(Console.ReadLine());
- if (ChekingDigit(num) == true)
+
+    if (num > 999 || num <100)
+    Console.WriteLine("Вы ввели не трехзначное число!");
+
+else 
 
  {
-    int des = CutSecondNumber(num);
-    Console.WriteLine($"New version of a number {num} is {des} ");
- }
-else
-{
-    Console.WriteLine("Вы ввели не трехзначное число! ");
-}
+    int newnum = SecondDigit(num);
+    Console.WriteLine("Вторая цифра этого числа: " + newnum);
+ 
 */
 
 // Задача 2.Напишите программу,которая выводит третью цифру заданного числа  или сообщает, что третьей цифры нет.
@@ -62,7 +49,7 @@ Console.WriteLine("Enter a number: ");
  */
 
  // Задача 3.Напишите программу, которая принимает на вход цифру,обозначающую день недели и проверяет ,является ли этот день выходным.
-
+/*
 bool Weekend(int num)
 {
     if (num ==6 || num == 7)
@@ -87,10 +74,11 @@ else
     if (sandays == true)
 {
 
-    Console.WriteLine("Этот день выхоной!");
+    Console.WriteLine("Этот день выходной!");
 }
 else
 {
     Console.WriteLine("Этот день не выходной!");
 }
 }
+*/
